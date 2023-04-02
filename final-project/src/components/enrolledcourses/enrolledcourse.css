@@ -1,0 +1,54 @@
+.enrolled {
+    text-align: center;
+  }
+  .enrolled .box {
+    box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+    background-color: #fff;
+    padding: 30px 20px;
+    transition: 0.5s;
+  }
+  .enrolled .img {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    position: relative;
+  }
+  .enrolled img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .enrolled h1 {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  .enrolled span {
+    background-color: #f8f8f8;
+    padding: 5px 20px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #8cc2ee;
+    border-radius: 5px;
+  }
+  .enrolled .box .show {
+    opacity: 0;
+  }
+  .enrolled .box:hover {
+    background-color: #8cc2ee;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .enrolled .box:hover .show {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .enrolled .box:hover h1 {
+    color: #fff;
+  }
+  /*-------------enrolled---------*/
+  @media screen and (max-width: 768px) {
+  }

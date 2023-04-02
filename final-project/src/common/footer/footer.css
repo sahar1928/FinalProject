@@ -1,0 +1,45 @@
+.newletter {
+    background-color: #8cc2ee;
+    padding: 50px 0;
+    color: #fff;
+  }
+  .newletter .right,
+  .newletter .left {
+    padding-right: 40px;
+  }
+  .newletter h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .newletter .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .newletter input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    height: 30px;
+  }
+  .newletter i {
+    padding: 12px;
+    color: #8cc2ee;
+    background-color: #fff;
+  }
+  .newletter .box a {
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .newletter .box a:hover {
+    color: #000000;
+  }
+  .newletter .box li {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+

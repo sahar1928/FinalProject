@@ -60,20 +60,21 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const newUser = new User(
-      null, 
-      username, 
-      email,
-      password,
-      new Date(), 
-      image, 
-      firstName,
-      lastName,
-      { UserId: null, Balance: 0 }, 
-      [] 
-    );
-  
     try{
+      const newUser = new User(
+        null, 
+        username, 
+        email,
+        password,
+        new Date(), 
+        image, 
+        firstName,
+        lastName,
+        { UserId: null, Balance: 0 }, 
+        [] 
+      );
+        console.log(newUser);
+        
     const response = await fetch(URL + 'Users/Register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

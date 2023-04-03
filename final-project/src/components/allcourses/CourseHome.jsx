@@ -32,6 +32,7 @@ const CourseHome = () => {
         ))}
         </div>
         </section>
+        <Heading subtitle='Courses' title='Categories' />
       <Categories />
     </>
   );

@@ -83,5 +83,37 @@ namespace final_project_server.Controllers
             return courses;
         }
 
+        [HttpPost]
+        [Route("api/courses/delete")]
+        public IHttpActionResult GetRefund(Course course)
+        {
+            User newUser = course.EnrolledUsers[0];
+            using (var conn = new SqlConnection(_connectionString))
+            {
+                conn.Open();
+
+                if (DateTime.UtcNow.Subtract(course.EnrollmentDate).TotalHours > 1)
+                {
+                    return BadRequest("time passed");
+                }
+
+                var insertQuery = "DELETE FROM  Enrollment WHERE UserId = @UserId AND CourseId = @CourseId";
+                using (var insertCommand = new SqlCommand(insertQuery, conn))
+                {
+                    insertCommand.Parameters.AddWithValue("@UserId", newUser.UserId);
+                    insertCommand.Parameters.AddWithValue("@CourseId", course.CourseId);
+                    insertCommand.ExecuteNonQuery();
+                }
+
+                var updateQuery = "UPDATE UserBalance SET Balance = Balance + @Price WHERE UserId = @UserId";
+                using (var updateCommand = new SqlCommand(updateQuery, conn))
+                {
+                    updateCommand.Parameters.AddWithValue("@UserId", course.EnrolledUsers[0].UserId);
+                    updateCommand.Parameters.AddWithValue("@Price", course.Price);
+                    updateCommand.ExecuteNonQuery();
+                }
+                return Ok(course.Price);
+            }
+        }
     }
 }

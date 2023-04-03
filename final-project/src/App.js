@@ -36,7 +36,7 @@ function App() {
           <Navbar/>
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/about" element={<About />} />
+            <Route exact path="/about" element={<About /> } />
             <Route exact path="/courses" element={<CourseHome />} />
             <Route exact path="/team" element={<Team />} />
             <Route exact path="/contact" element={<Contact />} />
@@ -45,7 +45,6 @@ function App() {
             <Route exact path="/signup" element={<SignUp />} />
             <Route exact path="/profile" element={<Profile />} />
             <Route path="/category/:categoryId" element={<CategoryCourses/>} />
-
           </Routes>
           <Footer />
         </Router>

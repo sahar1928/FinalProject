@@ -229,8 +229,8 @@ namespace final_project_server.Controllers
         }
 
         [HttpPut]
-        [Route("api/users/{userId}")]
-        public IHttpActionResult UpdateUser(int userId, [FromBody] User user)
+        [Route("api/users/editDetails")]
+        public IHttpActionResult UpdateUser(User user)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
@@ -238,7 +238,7 @@ namespace final_project_server.Controllers
                 var query = "UPDATE Users SET FirstName = @FirstName, LastName = @LastName, Email = @Email WHERE UserId = @UserId";
                 using (var command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@UserId", userId);
+                    command.Parameters.AddWithValue("@UserId", user.UserId);
                     command.Parameters.AddWithValue("@FirstName", user.FirstName);
                     command.Parameters.AddWithValue("@LastName", user.LastName);
                     command.Parameters.AddWithValue("@Email", user.Email);

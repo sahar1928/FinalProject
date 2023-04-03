@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import { UserContext } from "../../assets/UserContext";
 import { URL } from "../../assets/url";
-import { User } from "../../assets/user";
 
 const ProfileTemp = () => {
   const { setUser, user } = useContext(UserContext);
@@ -17,26 +16,33 @@ const ProfileTemp = () => {
 
   const handleSave = async () => {
     try {
-      const res = await fetch(URL + `users/${user.UserId}`, {
+      const userId = user.UserId;
+      const userFirstName = user.FirstName;
+      const userLastName = user.LastName;
+      const userEmail = user.Email;
+
+      var newUser = {...user, FirstName: firstName, LastName: lastName, Email: email};
+      console.log(user);
+      console.log(newUser);
+      const res = await fetch(URL + `users/editDetails`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
+          "accept": "application/json"
         },
-        body: JSON.stringify({
-          FirstName: firstName,
-          LastName: lastName,
-          Email: email,
-        }),
+        body: JSON.stringify(newUser),
       });
-      const data = await res.json();
-
+      const response = await res.ok;
+      if(response){
       setUser(prevUser => ({
         ...prevUser,
-        FirstName: data.FirstName,
-        LastName: data.LastName,
-        Email: data.Email,
+        FirstName: firstName,
+        LastName: lastName,
+        Email: email,
       }));
+      localStorage.setItem('user', JSON.stringify(newUser));
       setEditing(false);
+    }
     } catch (err) {
       console.error(err);
     }

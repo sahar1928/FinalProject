@@ -63,34 +63,34 @@
   }
 
 
-  /*-------------online---------*/
-  .online {
+  /*-------------categories---------*/
+  .categories {
     text-align: center;
   }
-  .online .box {
+  .categories .box {
     box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
     background-color: #fff;
     padding: 30px 20px;
     transition: 0.5s;
   }
-  .online .img {
+  .categories .img {
     width: 80px;
     height: 80px;
     margin: auto;
     position: relative;
   }
-  .online img {
+  .categories img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .online h1 {
+  .categories h1 {
     font-weight: 500;
     font-size: 20px;
     margin: 20px 0;
     line-height: 30px;
   }
-  .online span {
+  .categories span {
     background-color: #f8f8f8;
     padding: 5px 20px;
     font-weight: 500;
@@ -98,24 +98,24 @@
     color: #8cc2ee;
     border-radius: 5px;
   }
-  .online .box .show {
+  .categories .box .show {
     opacity: 0;
   }
-  .online .box:hover {
+  .categories .box:hover {
     background-color: #8cc2ee;
     border-radius: 5px;
     cursor: pointer;
   }
-  .online .box:hover .show {
+  .categories .box:hover .show {
     opacity: 1;
     position: absolute;
     top: 0;
     left: 0;
   }
-  .online .box:hover h1 {
+  .categories .box:hover h1 {
     color: #fff;
   }
-  /*-------------online---------*/
+  /*-------------categories---------*/
   @media screen and (max-width: 768px) {
   }
   

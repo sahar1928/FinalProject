@@ -21,8 +21,8 @@ const CourseHome = () => {
 
   return (
     <>
-    <div className="margin" />
       <Back title="Explore Courses" />
+      <div className="margin" />
       <Heading subtitle='Courses' title='Benefits About Online Learning Expertise' />
       <section className="coursesCard" >
       <div className="content grid2">

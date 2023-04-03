@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { online } from "../../assets/dummydata";
 import {Link} from "react-router-dom";
 import { URL } from "../../assets/url";
+import Back from "../../common/back/Back";
 import Heading from "../../common/heading/Heading";
 import "./courses.css";
 
@@ -24,9 +25,8 @@ const Categories = () => {
 
   return (
     <>
-      <section className="online">
+      <section className="categories">
         <div className="container">
-          <Heading subtitle="COURSES" title="Categories of courses" />
           <div className="content grid3">
             {categories && categories.map((category) => (
               <div className="box" key={category.CategoryId}>

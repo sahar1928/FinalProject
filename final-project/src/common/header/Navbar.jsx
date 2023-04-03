@@ -60,7 +60,8 @@ const Navbar = () => {
                 <>
                   <ul>
                     <li>Hi, {user.FirstName}!</li>
-                    <li>Balance: {user.UserBalance.Balance}</li>
+                    <li>Balance: </li>
+                    <li>{user.UserBalance.Balance}$</li>
                     <li>
                       <Button className="btn" onClick={handleLogout}>
                         Logout

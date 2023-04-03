@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import CourseCard from "./CoursesCard";
 import { URL } from "../../assets/url";
 import { useParams, Link } from "react-router-dom";
+import Back from "../../common/back/Back";
 import Heading from "../../common/heading/Heading";
 import "./courses.css";
 
@@ -25,9 +26,11 @@ const CategoryCourses = () => {
 
   return (
     <>
-      <section className="online">
+        <div className="margin"/>
+      <section className="coursesCard">
         <div className="container">
-          <Heading subtitle="COURSES" title="Category Courses" />
+        <Back title="Explore Courses" />
+          <Heading subtitle="COURSES" title="Explore Courses" />
           <div className="content grid3">
         {courses &&
           courses.map((course) => (

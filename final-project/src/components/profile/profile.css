@@ -21,6 +21,9 @@
   font-weight: 500;
   color: #8cc2ee;
 }
+.blog .padding{
+  padding-left: 50%;
+}
 .blog span label {
   margin-left: 10px;
   color: grey;

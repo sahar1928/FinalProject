@@ -10,7 +10,7 @@ const ProfileHome = () => {
   return (
     <>
     <div className="margin" />
-      <Back title='Blog Posts' />
+      <Back title='Profile' />
       <section className='blog padding'>
           <Profile/>
         <div className='container grid2'>

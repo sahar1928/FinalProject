@@ -3,7 +3,7 @@ import { UserContext } from "../../assets/UserContext";
 import { Link, useNavigate } from "react-router-dom";
 import Heading from "../../common/heading/Heading";
 import { URL } from "../../assets/url";
-
+import "./enrolledcourse.css"
 const EnrolledCourses = () => {
   const navigate = useNavigate();
   const [courses, setCourses] = useState([]);
@@ -86,15 +86,13 @@ const EnrolledCourses = () => {
                           src={`../images/courses/c${course.CourseId}.png`}
                           alt=""
                         />
-                        <img
-                          src={`../images/courses/enrolled/o${course.CourseId}.png`}
-                          alt=""
-                          className="show"
-                        />
+                        
                       </div>
                       <h1>{course.CourseName}</h1>
-                      <span>{course.TotalTimeInHours} Hours</span>
-                      <span>{course.EnrollmentDate} </span>
+                      <span><p>{course.TotalTimeInHours} Hours</p></span>
+                      <br></br>
+                      <p>Order Time :</p>
+                      <span><p>{course.EnrollmentDate.split('T').join(' ')}</p> </span>
                       <button value={course.CourseId} onClick={(e) => handleClick(e)}>Refund request</button>
                   </div>
                 );

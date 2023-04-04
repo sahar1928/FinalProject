@@ -87,7 +87,7 @@ const Profile = () => {
   
 
   return (
-    <div>
+    <div className="padding">
       <h2>Profile</h2>
       {!editing && user && (
         <div>

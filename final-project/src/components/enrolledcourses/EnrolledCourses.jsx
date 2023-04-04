@@ -61,6 +61,7 @@ const EnrolledCourses = () => {
 
         navigate("/");
       } else {
+        alert('More than an hour has passed since you bought the course')
         console.error("Error refund request:", response.statusText);
       }
     } catch (error) {
@@ -94,7 +95,7 @@ const EnrolledCourses = () => {
                       <h1>{course.CourseName}</h1>
                       <span>{course.TotalTimeInHours} Hours</span>
                       <span>{course.EnrollmentDate} </span>
-                      <button value={course.CourseId} onClick={(e) => handleClick(e)}>test</button>
+                      <button value={course.CourseId} onClick={(e) => handleClick(e)}>Refund request</button>
                   </div>
                 );
               })}

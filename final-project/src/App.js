@@ -1,7 +1,7 @@
 import { useState, useEffect} from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {Navbar, Home,SignIn,SignUp, Faq, Footer, Contact, Profile, Team, About, CourseHome, ScrollToTop, CategoryCourses} from "./components/index";
+import {Navbar, Home,SignIn,SignUp, Faq, Footer, Contact, ProfileHome, Team, About,Blog, CourseHome, ScrollToTop, CategoryCourses} from "./components/index";
 import { UserContext } from "./assets/UserContext";
 
 function App() {
@@ -41,9 +41,10 @@ function App() {
             <Route exact path="/team" element={<Team />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/faq" element={<Faq />} />
+            <Route exact path="/blog" element={<Blog />} />
             <Route exact path="/signin" element={<SignIn />} />
             <Route exact path="/signup" element={<SignUp />} />
-            <Route exact path="/profile" element={<Profile />} />
+            <Route exact path="/profile" element={<ProfileHome />} />
             <Route path="/category/:categoryId" element={<CategoryCourses/>} />
           </Routes>
           <Footer />

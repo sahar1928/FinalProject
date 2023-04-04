@@ -1,7 +1,7 @@
 import React from "react"
 import AboutCard from "../about/AboutCard"
 import Hero from "./hero/Hero"
-import Profile from "../profile/Profile"
+import Profile from "../profile/ProfileHome"
 import Testimonal from "./testimonal/Testimonal"
 
 const Home = () => {

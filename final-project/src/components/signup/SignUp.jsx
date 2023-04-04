@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {User} from '../../assets/user';
+import Back from "../../common/back/Back";
 import {URL} from '../../assets/url';
+import "../../App.css"
 import {
   Container,
   Form,
@@ -44,10 +46,9 @@ const SignUp = () => {
   };
 
   const handleImageChange = (e) => {
-    // Assuming the user selects a file and you want to store the file object
-    const file = e.target.files[0];
-    // You can use FileReader API to read the contents of the file as a data URL
+    const file = e.target.files[0];  
     const reader = new FileReader();
+
     reader.onload = () => {
       const dataURL = reader.result;
       // Convert the data URL to a base64-encoded string
@@ -96,6 +97,9 @@ const SignUp = () => {
 
 
   return (
+    <>
+    <div className="margin"/>
+    <Back title="Sign-Up" />
     <Container className="my-5">
       <Row>
         <Col md={{ size: 6, offset: 3 }}>
@@ -184,6 +188,7 @@ const SignUp = () => {
         </Col>
       </Row>
     </Container>
+    </>
   );
 };
 

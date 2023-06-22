@@ -392,4 +392,330 @@ export const homeAbout = [
       cover: "./images/testo/t3.webp",
     },
   ]
+
+export const skills = [
+      {
+        id: 1,
+        name: "JavaScript"
+      },
+      {
+        id: 2,
+        name: "Python"
+      },
+      {
+        id: 3,
+        name: "Java"
+      },
+      {
+        id: 4,
+        name: "C#"
+      },
+      {
+        id: 5,
+        name: "C++"
+      },
+      {
+        id: 6,
+        name: "Ruby"
+      },
+      {
+        id: 7,
+        name: "HTML/CSS"
+      },
+      {
+        id: 8,
+        name: "SQL"
+      },
+      {
+        id: 9,
+        name: "React"
+      },
+      {
+        id: 10,
+        name: "Angular"
+      },
+      {
+        id: 11,
+        name: "Vue.js"
+      },
+      {
+        id: 12,
+        name: "Node.js"
+      },
+      {
+        id: 13,
+        name: "Express.js"
+      },
+      {
+        id: 14,
+        name: "MongoDB"
+      },
+      {
+        id: 15,
+        name: "AWS"
+      },
+      {
+        id: 16,
+        name: "Docker"
+      },
+      {
+        id: 17,
+        name: "Kubernetes"
+      },
+      {
+        id: 18,
+        name: "Machine Learning"
+      },
+      {
+        id: 19,
+        name: "Data Science"
+      },
+      {
+        id: 20,
+        name: "Artificial Intelligence"
+      },
+      {
+        id: 21,
+        name: "Cybersecurity"
+      },
+      {
+        id: 22,
+        name: "Big Data"
+      },
+      {
+        id: 23,
+        name: "DevOps"
+      },
+      {
+        id: 24,
+        name: "UI/UX Design"
+      },
+      {
+        id: 25,
+        name: "Blockchain"
+      },
+      {
+        id: 26,
+        name: "AR/VR"
+      },
+      {
+        id: 27,
+        name: "Mobile App Development"
+      },
+      {
+        id: 28,
+        name: "Embedded Systems"
+      },
+      {
+        id: 29,
+        name: "Robotics"
+      },
+      {
+        id: 30,
+        name: "Quantum Computing"
+      }
+    ]
+
+export const locations = [  
+    {
+      id: 1,
+      name: "Tel Aviv"
+    },
+    {
+      id: 2,
+      name: "Jerusalem"
+    },
+    {
+      id: 3,
+      name: "Haifa"
+    },
+    {
+      id: 4,
+      name: "Rishon LeZion"
+    },
+    {
+      id: 5,
+      name: "Petah Tikva"
+    },
+    {
+      id: 6,
+      name: "Ashdod"
+    },
+    {
+      id: 7,
+      name: "Netanya"
+    },
+    {
+      id: 8,
+      name: "Beer Sheva"
+    },
+    {
+      id: 9,
+      name: "Bnei Brak"
+    },
+    {
+      id: 10,
+      name: "Rehovot"
+    },
+    {
+      id: 11,
+      name: "Bat Yam"
+    },
+    {
+      id: 12,
+      name: "Nahariya"
+    },
+    {
+      id: 13,
+      name: "Lod"
+    },
+    {
+      id: 14,
+      name: "Ashkelon"
+    },
+    {
+      id: 15,
+      name: "Tiberias"
+    },
+    {
+      id: 16,
+      name: "Eilat"
+    },
+    {
+      id: 17,
+      name: "Herzliya"
+    },
+    {
+      id: 18,
+      name: "Kfar Saba"
+    },
+    {
+      id: 19,
+      name: "Ra'anana"
+    },
+    {
+      id: 20,
+      name: "Acre"
+    },
+    {
+      id: 21,
+      name: "Modi'in"
+    },
+    {
+      id: 22,
+      name: "Beitar Illit"
+    },
+    {
+      id: 23,
+      name: "Hod HaSharon"
+    },
+    {
+      id: 24,
+      name: "Ramat Gan"
+    },
+    {
+      id: 25,
+      name: "Ramla"
+    },
+    {
+      id: 26,
+      name: "Nazareth"
+    },
+    {
+      id: 27,
+      name: "Rehovot"
+    },
+    {
+      id: 28,
+      name: "Beersheba"
+    },
+    {
+      id: 29,
+      name: "Afula"
+    },
+    {
+      id: 30,
+      name: "Holon"
+    },
+    {
+      id: 31,
+      name: "Sderot"
+    },
+    {
+      id: 32,
+      name: "Givatayim"
+    },
+    {
+      id: 33,
+      name: "Lod"
+    },
+    {
+      id: 34,
+      name: "Maalot-Tarshiha"
+    },
+    {
+      id: 35,
+      name: "Arad"
+    },
+    {
+      id: 36,
+      name: "Hod HaSharon"
+    },
+    {
+      id: 37,
+      name: "Hadera"
+    },
+    {
+      id: 38,
+      name: "Kiryat Gat"
+    },
+    {
+      id: 39,
+      name: "Nahariya"
+    },
+    {
+      id: 40,
+      name: "Karmiel"
+    },
+    {
+      id: 41,
+      name: "Tiberias"
+    },
+    {
+      id: 42,
+      name: "Eilat"
+    },
+    {
+      id: 43,
+      name: "Ramat HaSharon"
+    },
+    {
+      id: 44,
+      name: "Migdal HaEmek"
+    },
+    {
+      id: 45,
+      name: "Kiryat Motzkin"
+    },
+    {
+      id: 46,
+      name: "Ofakim"
+    },
+    {
+      id: 47,
+      name: "Sakhnin"
+    },
+    {
+      id: 48,
+      name: "Tamra"
+    },
+    {
+      id: 49,
+      name: "Netivot"
+    },
+    {
+      id: 50,
+      name: "Tirat Carmel"
+    }
+  ]
   
